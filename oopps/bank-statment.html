@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank-statment</title>
+</head>
+<body>
+    <script>
+        class Bank{
+            constructor(name,account,balance,transations,ifsc="am123",branch="amreli",){
+                    this.name=name,
+                    this.account=account,
+                    this.balance=balance,
+                    this.transations=transations,
+                    this.ifsc=ifsc,
+                    this.branch=branch   
+            }
+            info(){
+                console.log(`
+                
+                name = ${this.name},
+                account = ${this.account},
+                balance = ${this.balance},
+                ifsc = ${this.ifsc},
+                branch = ${this.branch}
+        ` ) }
+        transtions(){
+            console.log(`Your Last 5 transtions ${this.transations}`)
+        }
+
+            }
+        let Ram = new Bank("ram",123,1000,[10,20,30,40,50]) ;
+
+        Ram.info()
+        Ram.transtions()
+
+
+        
+    </script>
+</body>
+</html>
